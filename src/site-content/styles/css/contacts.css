@@ -1,0 +1,35 @@
+section.contacts {
+  background-color: #f76c5e;
+  font-family: "Quicksand", Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 40px 10px; }
+  section.contacts .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  section.contacts .column {
+    background-color: #324376;
+    width: 26px;
+    height: 26px;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease; }
+    section.contacts .column a {
+      text-decoration: none;
+      color: #fff; }
+    section.contacts .column:hover {
+      background-color: #fff; }
+      section.contacts .column:hover a, section.contacts .column:hover svg {
+        color: #324376; }
+    section.contacts .column svg {
+      width: 22px;
+      height: 22px; }
