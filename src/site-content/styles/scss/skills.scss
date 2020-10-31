@@ -1,5 +1,40 @@
-@import './styles.scss';
-@import './mixins.scss';
+$mobile-width: 425px;
+$tablet-width: 768px;
+  
+@mixin onlyMobile {
+    @media (max-width: #{$mobile-width}){
+        @content;
+    }
+}
+
+@mixin onlyTablet {
+    @media (min-width: #{$mobile-width + 1}) and (max-width: #{$tablet-width}){
+        @content;
+    }
+}
+
+@mixin toTablet {
+    @media (max-width: #{$tablet-width}){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$tablet-width + 1}){
+        @content;
+    }
+}
+
+$whiteColor: #fff;
+$blueColor: #324376;
+$orangeColor: #f76c5e;
+$lightOrangeColor: #f68e5f;
+$yellowColor: #f5dd90;
+$lightBlueColor: #586ba4;
+$titleFont: 'Roboto Slab', serif;
+$textFont: 'Quicksand', Arial, sans-serif;
+$box-shadow: 2px 7px 18px -10px rgba(0,0,0,0.4);
+$blueColorOp: rgba(50,67,118, 0.5);
 
 .skills {
     margin-top: -10rem;
