@@ -1,0 +1,78 @@
+@import './styles.scss';
+
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.8em;
+}
+h1, h2, h3 {
+    font-family: $titleFont;
+}
+p{
+    color: #000;
+}
+
+body {
+    min-width: 320px;
+}
+
+
+section.hero {
+    background: $whiteColor;
+    text-align: center;
+    color: $blueColor;
+    line-height: 1.2em;
+    padding: 60px 0 0 0;
+    font-family: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-family: $textFont;
+    img {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 300px;
+    }
+    p, a, span {
+        font-size: 18px;
+    }
+}
+
+section.code {
+    padding: 0px 20px 20px;
+    .buttons {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+        &.white{
+            background: $yellowColor;
+        }
+        &.orange{
+            background: $lightOrangeColor;
+        }
+        &.yellow{
+            background: #324376;
+        }
+    }
+}
+
+footer {
+    background-color: $orangeColor;
+    font-family: $textFont;
+    color: $whiteColor;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
